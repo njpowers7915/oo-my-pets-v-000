@@ -3,7 +3,7 @@ class Fish
   attr_reader :name
   @@fish_count = []
   
-  def count
+  def self.count
     @@fish_count
   end
   
