@@ -10,10 +10,20 @@ class Owner
  
   def list_pets
     pets.each do |pet_type, instance_array|
-    
-    
-    
-    "I have #{Fish.count} fish, #{Dog.count} dog(s), and #{Cat.count} cat(s)."
+      counts = []
+      if pet_type == :fishes
+        fish_count = instance_array.count
+        counts << fish_count
+      elsif pet_type == :dogs
+        dog_count = instance_array.count
+        counts << dog_count
+      elsif pet_type == :cats
+        cat_count = instance_array.count
+        counts << cat_count
+      end
+      counts
+    end
+    "I have #{counts[0]} fish, #{counts[1]} dog(s), and #{counts[2]} cat(s)."
   end
   
   def sell_pets
