@@ -14,6 +14,7 @@ class Owner
         dog_count = instance.length
       end
     end
+    binding.pry
   end
   
   def sell_pets
