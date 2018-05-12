@@ -9,7 +9,8 @@ class Owner
   end
   
   def sell_pets
-    
+    pets.each do |pet_type, instance|
+      pet_type
   end
   
   def list_pets
