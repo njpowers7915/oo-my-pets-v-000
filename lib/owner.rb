@@ -12,6 +12,7 @@ class Owner
     pets[:fishes] = []
     pets[:dogs] = []
     pets[:cats] = []
+    
   end
   
   def list_pets
