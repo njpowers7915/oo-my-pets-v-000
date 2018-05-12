@@ -24,7 +24,13 @@ class Owner
     
   end
   
-  def 
+  def play_with_cats
+    
+  end
+  
+  def feed_fish
+    
+  end
     
   
   def species
