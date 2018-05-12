@@ -22,8 +22,8 @@ class Owner
         counts << cat_count
       end
       counts
+      "I have #{counts[0]} fish, #{counts[1]} dog(s), and #{counts[2]} cat(s)."
     end
-    "I have #{counts[0]} fish, #{counts[1]} dog(s), and #{counts[2]} cat(s)."
   end
   
   def sell_pets
