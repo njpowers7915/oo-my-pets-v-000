@@ -10,6 +10,14 @@ class Owner
     @species
   end
   
+  def self.count
+    @@all.count
+  end
+  
+  def self.reset_all
+    @@all = []
+    @@all.count
+  end
   
   def self.all
     @@all
