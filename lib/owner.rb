@@ -23,7 +23,9 @@ class Owner
   def walk_dogs
     pets.each do |pet_type, instance|
       if pet_type = :dogs
-        instance.each {|i| i.mood=("happy")}
+        instance.map {|i| i.mood=("happy")}
+      end
+    end
   end
   
   def play_with_cats
