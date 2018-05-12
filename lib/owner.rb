@@ -13,7 +13,10 @@ class Owner
   end
   
   def list_pets
-    
+    pets.each do |pet_type, instance|
+      if pet_type = :dogs
+        instance.map {|i| i.mood=("happy")}
+      end
   end
   
   
