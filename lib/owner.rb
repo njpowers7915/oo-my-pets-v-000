@@ -19,6 +19,7 @@ class Owner
       if pet_type == :dogs
         instance.map {|i| i.mood=("happy")}
       end
+    end
   end
   
   
