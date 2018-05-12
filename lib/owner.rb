@@ -21,7 +21,7 @@ class Owner
   end 
   
   def walk_dogs
-    
+    pets[:dogs][mood]
   end
   
   def play_with_cats
