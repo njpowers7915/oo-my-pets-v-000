@@ -4,11 +4,11 @@ class Cat
  @@cat_count = []
   
   def count
-    @@dog_count
+    @@cat_count
   end
   
   def save
-    @@dog_count << self
+    @@cat_count << self
   end
  
   
