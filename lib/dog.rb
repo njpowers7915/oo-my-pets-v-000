@@ -4,7 +4,7 @@ class Dog
  @@dog_count = []
   
   def self.count
-    @@dog_count.length
+    @@dog_count.count
   end
   
   def save
