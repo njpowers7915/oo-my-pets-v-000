@@ -4,11 +4,11 @@ class Dog
  @@dog_count = []
   
   def count
-    @@fish_count
+    @@dog_count
   end
   
   def save
-    @@fish_count << self
+    @@dog_count << self
   end
   
   
