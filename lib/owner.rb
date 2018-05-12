@@ -21,7 +21,9 @@ class Owner
   end 
   
   def walk_dogs
-    pets[:dogs][mood]
+    pets.each do |pet_type, instance|
+      if pet_type = :dogs
+        instance.each {|i| i.mood=("happy")}
   end
   
   def play_with_cats
