@@ -4,7 +4,7 @@ class Cat
  @@cat_count = []
   
   def self.count
-    @@cat_count
+    @@cat_count.length
   end
   
   def save
