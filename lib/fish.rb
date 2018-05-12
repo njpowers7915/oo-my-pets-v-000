@@ -7,13 +7,14 @@ class Fish
     @@fish_count.count
   end
   
-  def save
-    @@fish_count << self
-  end
+ # def save
+  #  @@fish_count << self
+  #end
   
   
   def initialize(name, mood = "nervous")
     @name = name
     @mood = mood
+    @@fish_count << self
   end
 end
