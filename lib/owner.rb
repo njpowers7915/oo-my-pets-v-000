@@ -29,7 +29,7 @@ class Owner
   end
   
   def pets({:fishes => [], :dogs => [], :cats => []})
-    
+    {:fishes
   end
   
 end
