@@ -10,7 +10,9 @@ class Owner
   
   def sell_pets
     pets.each do |pet_type, instance|
-      pet_type.map {|i| i.mood=("nervous")}
+      pet_type.each do {|i| 
+        i.mood=("nervous")
+      end
     end
     pets[:fishes] = []
     pets[:dogs] = []
