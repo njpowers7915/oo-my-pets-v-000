@@ -9,7 +9,7 @@ class Owner
   end
  
    def list_pets
-    pets.each do |pet_type, instance|
+    pets.each do |pet_type, value|
       if pet_type == :dogs
         dog_count = instance.length
       end
