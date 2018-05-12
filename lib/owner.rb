@@ -7,6 +7,14 @@ class Owner
     @@all << self
     @pets = pets
   end
+ 
+   def list_pets
+    pets.each do |pet_type, instance|
+      if pet_type == :dogs
+        instance.map {|i| i.mood=("happy")}
+      end
+    end
+  end
   
   def sell_pets
     pets.each do |pet_type, instance|
@@ -17,18 +25,8 @@ class Owner
     pets[:fishes] = []
     pets[:dogs] = []
     pets[:cats] = []
-    
   end
-  
-  def list_pets
-    pets.each do |pet_type, instance|
-      if pet_type == :dogs
-        instance.map {|i| i.mood=("happy")}
-      end
-    end
-  end
-  
-  
+
   def buy_fish(name)
     pets[:fishes] << Fish.new(name)
   end
