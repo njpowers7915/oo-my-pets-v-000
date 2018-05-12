@@ -16,7 +16,7 @@ class Owner
   
   def list_pets
     pets.each do |pet_type, instance|
-      if pet_type = :dogs
+      if pet_type == :dogs
         instance.map {|i| i.mood=("happy")}
       end
   end
@@ -36,7 +36,7 @@ class Owner
   
   def walk_dogs
     pets.each do |pet_type, instance|
-      if pet_type = :dogs
+      if pet_type == :dogs
         instance.map {|i| i.mood=("happy")}
       end
     end
@@ -44,7 +44,7 @@ class Owner
   
   def play_with_cats
     pets.each do |pet_type, instance|
-      if pet_type = :cats
+      if pet_type == :cats
         instance.map {|i| i.mood=("happy")}
       end
     end
@@ -52,7 +52,7 @@ class Owner
   
   def feed_fish
     pets.each do |pet_type, instance|
-      if pet_type = :fishes
+      if pet_type == :fishes
         instance.map {|i| i.mood=("happy")}
       end
     end
