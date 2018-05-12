@@ -29,11 +29,19 @@ class Owner
   end
   
   def play_with_cats
-    
+    pets.each do |pet_type, instance|
+      if pet_type = :cats
+        instance.map {|i| i.mood=("happy")}
+      end
+    end
   end
   
   def feed_fish
-    
+    pets.each do |pet_type, instance|
+      if pet_type = :fishes
+        instance.map {|i| i.mood=("happy")}
+      end
+    end
   end
     
   
