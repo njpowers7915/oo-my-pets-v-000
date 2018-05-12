@@ -3,7 +3,7 @@ class Cat
   attr_reader :name
  @@cat_count = []
   
-  def count
+  def self.count
     @@cat_count
   end
   

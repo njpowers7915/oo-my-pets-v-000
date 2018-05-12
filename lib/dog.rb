@@ -3,7 +3,7 @@ class Dog
   attr_reader :name
  @@dog_count = []
   
-  def count
+  def self.count
     @@dog_count
   end
   
