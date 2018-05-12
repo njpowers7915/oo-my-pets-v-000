@@ -9,7 +9,7 @@ class Owner
   end
  
   def list_pets
-    
+    pets.each do |pet_type, instance_array|
     
     
     
