@@ -22,6 +22,10 @@ class Owner
   
   def walk_dogs
     
+  end
+  
+  def 
+    
   
   def species
     @species
