@@ -4,7 +4,7 @@ class Fish
   @@fish_count = 0
   
   def self.count
-    @@fish_count.count
+    @@fish_count
   end
   
  # def save
