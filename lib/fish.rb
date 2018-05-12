@@ -1,7 +1,7 @@
 class Fish
   attr_accessor :mood
   attr_reader :name
-  @@fish_count = []
+  @@fish_count = 0
   
   def self.count
     @@fish_count.count
@@ -15,6 +15,6 @@ class Fish
   def initialize(name, mood = "nervous")
     @name = name
     @mood = mood
-    @@fish_count << self
+    @@fish_count += 1
   end
 end
