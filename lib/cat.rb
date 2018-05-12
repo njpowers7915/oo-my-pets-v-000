@@ -1,4 +1,6 @@
 class Cat
+  attr_accessor :mood
+  
   def name
     @name
   end
