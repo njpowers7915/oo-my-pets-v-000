@@ -28,4 +28,8 @@ class Owner
     @@all
   end
   
+  def pets
+    
+  end
+  
 end
