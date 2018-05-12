@@ -7,9 +7,9 @@ class Dog
     @@dog_count.count
   end
   
-  def save
-    @@dog_count << self
-  end
+ # def save
+#    @@dog_count << self
+ # end
   
   
   def initialize(name, mood = "nervous")
