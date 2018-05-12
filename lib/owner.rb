@@ -11,7 +11,7 @@ class Owner
    def list_pets
     pets.each do |pet_type, instance|
       if pet_type == :dogs
-        instance.map {|i| i.mood=("happy")}
+        dog_count = instance.length
       end
     end
   end
