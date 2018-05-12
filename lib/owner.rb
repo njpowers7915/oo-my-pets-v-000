@@ -9,8 +9,9 @@ class Owner
   end
   
   def sell_pets
-    pets.map do |pet_type, instance|
-      pet_type.clear
+    pets[:fishes] = []
+    pets[:dogs] = []
+    pets[:cats] = []
     end
   end
   
