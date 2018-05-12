@@ -15,5 +15,6 @@ class Dog
   def initialize(name, mood = "nervous")
     @name = name
     @mood = mood
+    @@dog_count << self
   end
 end
